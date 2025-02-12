@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playlist</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Home page</a>
+    <a href="/auth/signout">Sign out</a>
+  </nav>
+
+  <h1>Welcome, <%= user.username %>! This is your Playlist</h1>
+
+  <h2>List of songs in your playlist</h2>
+
+  <% if (user.playlist.length > 0) { %>
+    <ul>
+      <% user.playlist.forEach(song => { %>
+        <li><a href="/users/<%= user._id %>/songs/<%= song._id %>"><%= song.name %> - <%= song.artist %> - <%= song.album %> - <%= song.durration %> - <%= song. favorite %></a></li>
+      <% }) %>
+    </ul>
+  <% } else { %>
+    <p>No songs in your playlist</p>
+  <% } %>
+  
+  <a href="/users/<%= user._id %>/songs/new">Add songs to your playlist</a>
+</body>
+</html>

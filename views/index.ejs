@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav>
+    <a href="/">Home Page</a>
+    <% if (user) { %>
+    <a href="/auth/signout">Sign Out</a>
+    <% } %>
+  </nav>
+
+  <h1>Welcome, <%= user ? user.username : 'Guest' %> </h1>
+
+  <% if (!user) { %>
+    <p>Please sign in </p>
+    <p><a href="/auth/signin">Sign In</a> Welcome back, friend!</p>
+    <p>Or</p>
+    <p> 
+      <a href="/auth/signup">Sign Up</a> It's FREE!</p>
+  <% } %>
+</body>
+</html>
