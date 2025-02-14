@@ -7,6 +7,7 @@ const mongoose = require("mongoose");
 const session = require("express-session")
 const methodOverride = require("method-override");
 const User = require('./models/user');
+const MongoStore = require('connect-mongo');
 
 const PORT = process.env.PORT || 3000;
 
@@ -25,6 +26,20 @@ app.use(
     secret: process.env.SESSION_SECRET,
     resave: false,
     saveUninitialized: true,
+  })
+);
+app.use(
+  session({
+      secret: process.env.SESSION_SECRET,
+      resave: false,
+      saveUninitialized: false,
+      store: MongoStore.create({
+          mongoUrl: process.env.MONGODB_URI,
+          collectionName: 'sessions',
+      }),
+      cookie: {
+          maxAge: 1000 * 60 * 60 * 24,
+      },
   })
 );
 
