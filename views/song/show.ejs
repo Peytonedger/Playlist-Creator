@@ -6,25 +6,31 @@
   <title>Song Details</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body class="home-body">
   <nav>
     <a href="/">Home page</a>
     <a href="/auth/signout">Sign out</a>
   </nav>
 
-  <h1>Song Details</h1>
+  <h1 class="text-color">Song Details</h1>
+  <div class="song-details">
+   <p>Name: <%= song.name %></p>
+   <p>Artist: <%= song.artist %></p>
+   <p>Album: <%= song.album %></p>
+   <p>Durration: <%= song.durration %></p>
 
-  <p>Name: <%= song.name %></p>
-  <p>Artist: <%= song.artist %></p>
-  <p>Album: <%= song.album %></p>
-  <p>Durration: <%= song.durration %></p>
-  <p>Favorite: <%= song.favorite %></p>
 
-  <a href="/users/<%= userId %>/songs/<%= song._id %>/edit">Edit Song</a>
+ 
+   <a href="/users/<%= userId %>/songs/<%= song._id %>/edit">Edit Song</a>
+ 
 
-  <form action="/users/<%= userId %>/songs/<%= song._id %>?_method=DELETE" method="post">
-    <button type="submit">Delete Song</button>
-  </form>
-  <a href="/users/<%= userId %>">Back to playlist</a>
+   <form action="/users/<%= userId %>/songs/<%= song._id %>?_method=DELETE" method="post">
+     <button type="submit">Delete Song</button>
+   </form>
+
+ 
+   <a href="/users/<%= userId %>">Back to playlist</a>
+  </div>
+
 </body>
 </html>

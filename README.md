@@ -1,6 +1,6 @@
 Title of the website: The Playlist Creator!
 
-[text](https://www.google.com/url?sa%3Di%26url%3Dhttps%3A%2F%2Fwww.technologyreview.com%2F2024%2F08%2F16%2F1096276%2Fspotify-algorithms-music-discovery-ux%2F%26psig%3DAOvVaw0Cn3_cJ4P2eTtxQSOcWdSr%26ust%3D1739490274835000%26source%3Dimages%26cd%3Dvfe%26opi%3D89978449%26ved%3D0CBQQjRxqFwoTCNjs_Luov4sDFQAAAAAdAAAAABAQ)
+https://i.fbcd.co/products/resized/resized-1500-1000/mpfoto71-vintage-vinyl-music-background-11-edba03ec632fb261f16604e74153dc46742cb72a83f6c62b083994498d1b5519.webp
 
 Description: Playlist Creator is the perfect place to store any song you dont want to forget! First, create an account to start adding all the music you want into your playlist where you can add, delete or change anything at any time. 
 

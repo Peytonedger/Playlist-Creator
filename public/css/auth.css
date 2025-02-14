@@ -1,5 +1,8 @@
 body {
-    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    background-image: url('https://www.wallpaperflare.com/static/236/954/327/vinyl-record-music-vector-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -9,16 +12,17 @@ body {
   }
   
   form {
-    background: var(--light);
+    background: rgb(248, 248, 248);
+    opacity: 0.8;
     padding: 2.5rem;
     border-radius: 16px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
     width: 100%;
     max-width: 400px;
   }
   
   h2 {
     color: var(--primary);
+    color: #c8c6d0;
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2rem;
@@ -40,7 +44,7 @@ body {
   input {
     width: 100%;
     padding: 0.8rem;
-    border: 2px solid #e0e0e0;
+    border: 2px solid #060606;
     border-radius: 8px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
@@ -55,7 +59,7 @@ body {
   button {
     width: 100%;
     padding: 1rem;
-    background: #000000;
+    background: #c8c6d0;
     color: white;
     border: none;
     border-radius: 8px;
@@ -63,10 +67,11 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    
   }
   
   button:hover {
-    background: #333333;
+    background: #d51111;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0,0,0,0.3);
   }
@@ -87,7 +92,7 @@ body {
     }
   }
   
-  /* Add below existing button styles */
+
   .form-footer {
     margin-top: 1.5rem;
     text-align: center;
@@ -103,10 +108,11 @@ body {
     text-decoration: underline;
   }
   
-  /* Add secondary button style */
+
   .button-secondary {
     background: var(--secondary);
     margin-top: 1rem;
+    
   }
   
   .button-secondary:hover {

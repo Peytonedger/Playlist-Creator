@@ -6,33 +6,31 @@
   <title>Add songs to your playlist</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body class="home-body">
     <nav>
         <a href="/">Home page</a>
         <a href="/auth/signout">Sign out</a>
       </nav>
 
   <h1>Add songs to your Playlist</h1>
+ <div class="song-edit">
+   <form action="/users/<%= userId %>/songs" method="post">
+     <label for="name">Song Name</label>
+     <input type="text" name="name" id="name">
 
-  <form action="/users/<%= userId %>/songs" method="post">
-    <label for="name">Song Name</label>
-    <input type="text" name="name" id="name">
+     <label for="artist">Artist</label>
+     <input type="text" name="artist" id="artist">
 
-    <label for="artist">Artist</label>
-    <input type="text" name="artist" id="artist">
+     <label for="album">Album</label>
+     <input type="text" name="album" id="album">
 
-    <label for="album">Album</label>
-    <input type="text" name="album" id="album">
+     <label for="durration">Durration</label>
+     <input type="text" name="durration" id="durration">
 
-    <label for="durration">Durration</label>
-    <input type="text" name="durration" id="durration">
-
-    <label for="favorite">Favorite</label>
-    <input type="checkbox" name="favorite" id="favorite">
-
-    <button type="submit">Add Song</button>
+     <button type="submit">Add Song</button>
     
 
-  </form>
+   </form>
+ </div>
 </body>
 </html>

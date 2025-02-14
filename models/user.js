@@ -17,10 +17,6 @@ const songSchema = new mongoose.Schema({
     type: String,
     required: false,
   },
-  favorite: {
-    type: Boolean,
-    required: false,
-  }
   
 })
 

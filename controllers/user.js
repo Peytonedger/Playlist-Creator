@@ -41,12 +41,12 @@ router.post('/:id/songs', async (req, res) => {
   const userId = req.params.id;
   const name = req.body.name;
   const artist = req.body.artist;
-  const newAlbum = req.body.album;
-  const newDurration = req.body.durration;
-  const newFavorite = req.body.favorite;
+  const album = req.body.album;
+  const durration = req.body.durration;
+
 
   const user = await User.findById(userId);
-  user.playlist.push({name, artist, album, durration, favorite});
+  user.playlist.push({name, artist, album, durration});
 
   await user.save();
 
@@ -60,7 +60,7 @@ router.put('/:id/songs/:songId', async (req, res) => {
   const newArtist = req.body.artist;
   const newAlbum = req.body.album;
   const newDurration = req.body.durration;
-  const newFavorite = req.body.favorite;
+
 
   const user = await User.findById(userId);
   const song = user.playlist.id(songId);
@@ -69,7 +69,7 @@ router.put('/:id/songs/:songId', async (req, res) => {
   song.artist = newArtist;
   song.album = newAlbum;
   song.durration = newDurration;
-  song.favorite = newFavorite;
+
 
   await user.save();
 

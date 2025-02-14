@@ -1,31 +1,88 @@
 :root {
-    --primary: #2A7F62;
-    --primary-dark: #1D5845;
-    --secondary: #FF9F1C;
-    --light: #FDFFFC;
-    --dark: #2B303A;
-    --gray: #5C6B73;
+    --primary: #050505;
+    --primary-dark: #ff1f1f;
+    --secondary: #ff1c1c;
+    --light: #f1f5ef;
+    --dark: #050507;
+    --gray: #040506;
   }
   
   body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
+    font-family: 'Courier New', system-ui, sans-serif;
     line-height: 1.6;
     color: var(--dark);
-    background-color: #f8f9fa;
+    background-color: #393a3b;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .index-body {
+    background-image: url('https://www.wallpaperflare.com/static/236/954/327/vinyl-record-music-vector-wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .home-body {
+    background-image: url('https://m2.paperblog.com/i/159/1593792/su-di-giri-L-o4qAyk.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .welcome-playlist {
+    color: #f1f5ef;
+  }
+
+  .song-home {
+    background: #f1f5ef;
+    opacity: 0.7;
+    padding: 2.5rem;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 800px;
+  } 
+
+  .song-details {
+    background: #f1f5ef;
+    opacity: 0.7;
+    padding: 2.5rem;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .song-edit {
+    background: #f1f5ef;
+    opacity: 0.7;
+    padding: 2.5rem;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 1020px;
+  }
+
+  .text-color {
+    color: #f1f5ef;
   }
   
   nav {
     background: var(--light);
+    opacity: 0.7;
     padding: 1rem 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 15px rgba(0,0,0,0.1);
     margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 1000px;
   }
   
   nav a {
@@ -39,6 +96,19 @@
   nav a:hover {
     color: var(--primary-dark);
     transform: translateY(-2px);
+  }
+
+  .sign {
+    background: #fbfafa;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2.5rem;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 400px;
+
   }
   
   h1 {

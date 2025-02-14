@@ -6,7 +6,7 @@
   <title>Home</title>
   <link rel="stylesheet" href="/css/style.css">
 </head>
-<body>
+<body class="index-body">
   <nav>
     <a href="/">Home Page</a>
     <% if (user) { %>
@@ -14,14 +14,17 @@
     <% } %>
   </nav>
 
+  <div class="sign">
   <h1>Welcome, <%= user ? user.username : 'Guest' %> </h1>
 
-  <% if (!user) { %>
+
+   <% if (!user) { %>
     <p>Please sign in </p>
     <p><a href="/auth/signin">Sign In</a> Welcome back, friend!</p>
     <p>Or</p>
     <p> 
       <a href="/auth/signup">Sign Up</a> It's FREE!</p>
-  <% } %>
+   <% } %>
+ </div>
 </body>
 </html>
