@@ -1,6 +1,6 @@
 Title of the website: The Playlist Creator!
 
-https://i.fbcd.co/products/resized/resized-1500-1000/mpfoto71-vintage-vinyl-music-background-11-edba03ec632fb261f16604e74153dc46742cb72a83f6c62b083994498d1b5519.webp
+![alt text](https://i.fbcd.co/products/original/mpfoto71-vintage-vinyl-music-background-11-edba03ec632fb261f16604e74153dc46742cb72a83f6c62b083994498d1b5519.jpg)
 
 Description: Playlist Creator is the perfect place to store any song you dont want to forget! First, create an account to start adding all the music you want into your playlist where you can add, delete or change anything at any time. 
 
